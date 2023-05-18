@@ -11,6 +11,8 @@
 ::-webkit-scrollbar {
     display: none;
 }
+
+/* section */
 section {
     position: relative;
     width: 100%;
@@ -22,12 +24,15 @@ section {
     background: #A40022;
     transition: all 0.3s ease-in-out;
 }
+
+/* heder */
 header {
     position: absolute;
+    z-index: 100;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 100px;
+    padding: 20px 10%;
     background: rgba(0, 0, 0, 0.3);
     display: flex;
     justify-content: space-between;
@@ -48,10 +53,15 @@ header ul li a {
     display: inline-block;
     color: #fff;
     font-weight: 400;
-    margin-left: 40px;
+    margin-left: 50px;
     text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+header ul li a:hover {
+    color: rgba(255, 255, 255, 0.3);
 }
 
+/* content */
 .content {
     position: relative;
     width: 100%;
@@ -61,24 +71,93 @@ header ul li a {
 }
 .content .textBox {
     position: relative;
-    max-width: 50%;
+    max-width: 40%;
+    margin: 0 0 2% 5%;
 }
 .content .textBox h2 {
     color: #fff;
     font-size: 4rem;
-    font-weight: 900;
-    text-transform: uppercase;
+    font-weight: 100;
+    margin-bottom: 5%;
 }
 .content .textBox h2 span {
     font-size: 6rem;
+    font-weight: bold;
 }
 .content .textBox p {
     color: #fff;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    font-weight: 300;
+    letter-spacing: 0.07rem;
+    margin-bottom: 2%;
 }
 .content .textBox a {
     display: inline-block;
     margin-top: 20px;
-    padding: 8px 20px;
+    padding: 2% 7%;
     background: #222222;
     color: #fff;
+    border-radius: 5px;
+    font-weight: 300;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+.content .textBox a:hover {
+    background-color: #FFAB21;
+    color: #222;
+    font-weight: 500;
+}
+.content .imgBox {
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+}
+.content .imgBox img {
+    max-width: 100%;
+    transform: rotate( -15deg );
+}
+.thumb {
+    position: absolute;
+    padding: 0 10%;
+    left: 50%;
+    bottom: 5%;
+    transform: translateX(-50%);
+    display: flex;
+}
+.thumb li {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.thumb li:hover {
+    transform: translateY(-15%);
+}
+.thumb li img {
+    max-width: 50%;
+}
+/* 섹션 우측 아이콘 */
+.icon {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.icon li {
+    list-style: none;
+}
+.icon li a {
+    display: inline-block;
+    margin: 50% 0;
+    transform: scale(0.8);
+    transition: all 0.3s ease-in-out;
+}
+.icon li a:hover {
+    opacity: 0.3;
 }
