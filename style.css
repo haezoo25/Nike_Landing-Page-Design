@@ -7,6 +7,12 @@
 
     -ms-overflow-style: none;
     scrollbar-width: none;
+   
+  /* 드래그 방지 */
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none
 }
 ::-webkit-scrollbar {
     display: none;
@@ -71,7 +77,8 @@ header ul li a:hover {
 }
 .content .textBox {
     position: relative;
-    max-width: 40%;
+    /* max-width: 40%; */
+    max-width: fit-content;
     margin: 0 0 2% 5%;
 }
 .content .textBox h2 {
@@ -86,10 +93,9 @@ header ul li a:hover {
 }
 .content .textBox p {
     color: #fff;
-    font-size: 1.3rem;
-    line-height: 1.8rem;
+    font-size: 1.25rem;
+    line-height: 2rem;
     font-weight: 300;
-    letter-spacing: 0.07rem;
     margin-bottom: 2%;
 }
 .content .textBox a {
@@ -116,6 +122,11 @@ header ul li a:hover {
 .content .imgBox img {
     max-width: 100%;
     transform: rotate( -15deg );
+
+    transition: all 0.3s ease-in-out;
+}
+.content .imgBox img:hover {
+    transform: rotate( 10deg );
 }
 .thumb {
     position: absolute;
