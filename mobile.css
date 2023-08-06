@@ -1,0 +1,74 @@
+@media screen and (max-width:1720px) {
+    .content .textBox { 
+        margin: 0 0 2% 3%; 
+    }
+}
+
+/* 데스크탑 */
+@media screen and (max-width:1440px) {
+
+    .content .textBox h2 { font-size: 3.2rem; }
+    /* .content .textBox { max-width: 45%; } */
+    .content .textBox p {
+        font-size: 1.2rem;
+        margin-bottom: none;
+    }
+    .content .textBox h2 span { font-size: 5rem; }
+    .content .imgBox { width: 55%; }
+    .content .imgBox img {
+        margin-right: 8%;
+    }
+
+    .thumb {
+        padding: 0 4%;
+    }
+}
+
+@media screen and (max-width:1440px) {
+    .content .textBox { 
+        margin: 0 0 2% 0; 
+    }
+}
+
+/* 노트북 */
+/* flex 전환 고려 */
+@media screen and (max-width:1024px) {
+    
+
+    /* .content .textBox h2 span {
+        font-size: 4rem;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .content .imgBox {
+        height: 70%;
+    } */
+}
+
+/*아이패드 (768px)*/
+@media screen and (max-width:991px) {
+
+}
+
+/*모바일*/ 
+@media screen and (max-width:767px) {
+
+}
+
+/*모바일2*/
+@media screen and (max-width:576px) {
+
+}
+
+/*모바일3 갤럭시*/
+@media screen and (max-width:425px) {
+
+}
+
+/*모바일4 아이폰*/
+@media screen and (max-width:375px) {
+
+}
